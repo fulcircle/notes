@@ -1,0 +1,42 @@
+body {
+  background: #f3f9fb;
+}
+
+.Note {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  background-color: #f3ecd3;
+  padding: 15px 15px;
+}
+
+.Close {
+  align-self: flex-end;
+  background: url('/images/close-icon.png') center;
+  background-size: cover;
+  min-height: 30px;
+  width: 30px;
+
+}
+
+.TextArea {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  border: none;
+  background-color: #f3ecd3;
+  color: #474f85;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  outline: none;
+}
+
+.NoteContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100vw;
+  height: 100vh;
+}
