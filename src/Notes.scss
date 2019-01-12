@@ -10,15 +10,41 @@ body {
   margin: 10px;
   background-color: #f3ecd3;
   padding: 15px 15px;
+  box-shadow: 10px 10px 10px #dfdfdf;
+}
+
+.AddNote {
+  @extend .Note;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-color: #dfdfdf;
+}
+
+.Plus {
+    border: 1px dotted #dfdfdf;
+    width: 3px;
+    height: 3px;
+    background-color: #c5c5c5;
+    box-sizing: border-box;
+    transform: scale(21);
 }
 
 .Close {
+  cursor: pointer;
   align-self: flex-end;
   background: url('/images/close-icon.png') center;
   background-size: cover;
   min-height: 30px;
-  width: 30px;
+  min-width: 30px;
 
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .TextArea {
@@ -33,10 +59,15 @@ body {
   outline: none;
 }
 
+.Title {
+  @extend .TextArea;
+  font-size: 26px;
+  height: 30px;
+}
+
 .NoteContainer {
+  flex-wrap: wrap;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 100vw;
-  height: 100vh;
 }
